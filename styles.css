@@ -558,7 +558,7 @@ img {
   width: 100%;
   aspect-ratio: 9 / 12.6;
   object-fit: cover;
-  object-position: center bottom;
+  object-position: center top;
 }
 
 .arch-frame__caption {
@@ -1128,13 +1128,16 @@ img {
   overflow: hidden;
   border: 2.5px solid var(--gold);
   box-shadow: var(--shadow-royal);
+  max-width: 440px;
+  margin: 0 auto;
 }
 
 .closing-art img {
   width: 100%;
-  aspect-ratio: 9 / 12;
-  object-fit: cover;
-  object-position: center bottom;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: center top;
 }
 
 .closing-en {
@@ -1280,8 +1283,13 @@ img {
     margin: 0 auto;
   }
 
+  .closing-art {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
   .closing-art img {
-    aspect-ratio: 16 / 9;
+    height: auto;
   }
 }
 
@@ -1553,8 +1561,14 @@ img {
     text-align: center;
   }
 
+  .closing-art {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
   .closing-art img {
-    aspect-ratio: 4 / 3;
+    height: auto;
+    object-position: center top;
   }
 
   .closing-en {
