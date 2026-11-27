@@ -1342,11 +1342,17 @@ img {
   /* Hero */
   .hero-section {
     padding: 24px 0 40px;
+    text-align: center;
+  }
+
+  .hero-copy {
+    text-align: center;
   }
 
   .hero-names {
     font-size: clamp(2.2rem, 11vw, 3.2rem);
     gap: 10px;
+    justify-content: center;
   }
 
   .name-connector {
@@ -1355,6 +1361,8 @@ img {
 
   .shloka-badge {
     padding: 10px 14px;
+    display: block;
+    text-align: center;
   }
 
   .shloka-title {
@@ -1363,6 +1371,16 @@ img {
 
   .shloka-lines {
     font-size: 0.78rem;
+    text-align: center;
+  }
+
+  .hero-quote {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .eyebrow-en {
+    text-align: center;
   }
 
   /* Hero meta pills — stack on small screens */
