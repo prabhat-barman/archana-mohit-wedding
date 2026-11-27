@@ -1496,6 +1496,20 @@ img {
     gap: 20px;
   }
 
+  .venue-info {
+    text-align: center;
+  }
+
+  .venue-actions {
+    justify-content: center;
+  }
+
+  .section--royal .section-kicker,
+  .venue-title,
+  .venue-address {
+    text-align: center;
+  }
+
   /* Natkhat banner */
   .natkhat-banner {
     padding: 20px 16px;
@@ -1523,6 +1537,10 @@ img {
   /* Closing */
   .closing-grid {
     gap: 24px;
+  }
+
+  .closing-copy {
+    text-align: center;
   }
 
   .closing-art img {
