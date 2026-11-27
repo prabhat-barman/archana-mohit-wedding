@@ -1383,10 +1383,17 @@ img {
     text-align: center;
   }
 
-  /* Hero meta pills — stack on small screens */
+  /* Hero meta pills — 2 col, 3rd card centered */
   .hero-meta-bar {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+
+  .hero-meta-bar .meta-pill:last-child {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
   }
 
   /* Countdown */
