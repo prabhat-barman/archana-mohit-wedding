@@ -1419,9 +1419,19 @@ img {
     justify-content: center;
   }
 
-  /* Arch frame */
+  /* Arch frame — show full image on mobile */
   .arch-frame {
-    border-radius: 160px 160px 20px 20px;
+    border-radius: 20px;
+    max-width: 100%;
+  }
+
+  .arch-frame img {
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center center;
+    background: #f9ece8;
+    max-height: 80vw;
+    width: 100%;
   }
 
   /* Section headings */
