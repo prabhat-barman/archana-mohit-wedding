@@ -1233,9 +1233,15 @@ img {
   transform: translateY(0);
 }
 
-@media (max-width: 980px) {
+/* ============================
+   RESPONSIVE — Tablet (≤900px)
+   ============================ */
+@media (max-width: 900px) {
+  .container {
+    width: min(1150px, 94%);
+  }
+
   .hero-grid,
-  .couple-cards,
   .featured-vivah,
   .venue-grid,
   .closing-grid {
@@ -1243,7 +1249,14 @@ img {
   }
 
   .events-grid-three {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .couple-cards {
     grid-template-columns: 1fr;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .couple-emblem {
@@ -1253,13 +1266,281 @@ img {
   .nav-links {
     display: none;
   }
+
+  .hero-section {
+    padding: 32px 0 50px;
+  }
+
+  .section {
+    padding: 52px 0;
+  }
+
+  .arch-frame {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .closing-art img {
+    aspect-ratio: 16 / 9;
+  }
 }
 
-@media (max-width: 640px) {
-  .hero-meta-bar,
-  .venue-timing-box,
+/* ============================
+   RESPONSIVE — Mobile (≤600px)
+   ============================ */
+@media (max-width: 600px) {
+  /* Base */
+  .container {
+    width: 92%;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  /* Nav */
+  .top-nav__inner {
+    min-height: 54px;
+    padding: 0 4px;
+    gap: 8px;
+  }
+
+  .brand-mark__hindi {
+    font-size: 0.95rem;
+  }
+
+  .music-pill__text {
+    display: none;
+  }
+
+  .music-pill {
+    padding: 7px 10px;
+  }
+
+  /* Curtain Gate */
+  .curtain-seal-card {
+    padding: 28px 18px 24px;
+    border-radius: 160px 160px 22px 22px;
+  }
+
+  .curtain-couple {
+    font-size: clamp(1.9rem, 10vw, 2.5rem);
+  }
+
+  .sacred-crest {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+
+  .btn-royal-seal {
+    padding: 12px 28px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Hero */
+  .hero-section {
+    padding: 24px 0 40px;
+  }
+
+  .hero-names {
+    font-size: clamp(2.2rem, 11vw, 3.2rem);
+    gap: 10px;
+  }
+
+  .name-connector {
+    font-size: clamp(1.1rem, 5vw, 1.4rem);
+  }
+
+  .shloka-badge {
+    padding: 10px 14px;
+  }
+
+  .shloka-title {
+    font-size: 0.84rem;
+  }
+
+  .shloka-lines {
+    font-size: 0.78rem;
+  }
+
+  /* Hero meta pills — stack on small screens */
+  .hero-meta-bar {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /* Countdown */
+  .countdown-grid {
+    gap: 7px;
+  }
+
+  .cd-box span {
+    font-size: 1.7rem;
+  }
+
+  .cd-box small {
+    font-size: 0.65rem;
+  }
+
+  /* Hero actions — full width on mobile */
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Arch frame */
+  .arch-frame {
+    border-radius: 160px 160px 20px 20px;
+  }
+
+  /* Section headings */
+  .section {
+    padding: 44px 0;
+  }
+
+  .section-head {
+    margin-bottom: 28px;
+  }
+
+  .section-title {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+  }
+
+  /* Couple cards */
+  .couple-cards {
+    max-width: 100%;
+    gap: 18px;
+  }
+
+  .heritage-card {
+    padding: 22px 18px;
+  }
+
+  .heritage-card__name {
+    font-size: 1.6rem;
+  }
+
+  /* Events */
+  .events-grid-three {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  /* Featured vivah */
+  .featured-vivah {
+    gap: 20px;
+  }
+
+  .featured-vivah__media img {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Venue */
+  .venue-timing-box {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .venue-grid {
+    gap: 20px;
+  }
+
+  /* Natkhat banner */
+  .natkhat-banner {
+    padding: 20px 16px;
+  }
+
+  .natkhat-banner__verse {
+    font-size: 1rem;
+  }
+
+  /* Family tabs */
+  .family-tab {
+    padding: 8px 16px;
+    font-size: 0.88rem;
+  }
+
+  .family-panel {
+    padding: 20px 16px;
+  }
+
   .family-list-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* Closing */
+  .closing-grid {
+    gap: 24px;
+  }
+
+  .closing-art img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .closing-en {
+    font-size: 1.9rem;
+  }
+
+  .closing-copy h2 {
+    font-size: 1.4rem;
+  }
+
+  /* Contact pills — stack */
+  .contact-pills {
+    flex-direction: column;
+  }
+
+  .contact-pill {
+    text-align: center;
+    padding: 12px 18px;
+  }
+
+  /* Footer */
+  .site-footer {
+    font-size: 0.82rem;
+    padding: 14px 12px;
+  }
+
+  /* Toast */
+  .toast {
+    bottom: 16px;
+    font-size: 0.84rem;
+    padding: 10px 18px;
+  }
+}
+
+/* ============================
+   RESPONSIVE — Very Small (≤380px)
+   ============================ */
+@media (max-width: 380px) {
+  .curtain-couple {
+    font-size: clamp(1.7rem, 9vw, 2.1rem);
+  }
+
+  .hero-names {
+    font-size: clamp(1.9rem, 10vw, 2.6rem);
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hero-meta-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .family-tabs {
+    gap: 7px;
+  }
+
+  .family-tab {
+    padding: 7px 12px;
+    font-size: 0.82rem;
   }
 }
 
