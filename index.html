@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>अर्चना (ज्योति) संग मोहित | शुभ विवाह आमंत्रण — 11 दिसम्बर 2026</title>
+  <meta name="description" content="बर्मन परिवार का स्नेहिल आमंत्रण — आयुष्मति अर्चना (ज्योति) एवं आयुष्मान मोहित के शुभ विवाह समारोह में सपरिवार पधारने का सस्नेह निमंत्रण। 11 दिसम्बर 2026, नेमा गार्डन, पाटन, जिला-जबलपुर (म.प्र.)" />
+  <meta property="og:title" content="अर्चना संग मोहित | शुभ विवाह आमंत्रण" />
+  <meta property="og:description" content="शुक्रवार, 11 दिसम्बर 2026 • नेमा गार्डन, शहपुरा रोड, पाटन, जिला-जबलपुर (म.प्र.)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://prabhat-barman.github.io/archana-mohit-wedding/" />
+  <meta property="og:image" content="https://prabhat-barman.github.io/archana-mohit-wedding/assets/couple-welcome.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Noto+Serif+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="petals-canvas" aria-hidden="true"></canvas>
+
+  <!-- Royal Palace Jharokha Curtain Gate -->
+  <div id="invite-curtain" class="curtain" role="dialog" aria-modal="true" aria-label="Wedding Invitation Cover">
+    <div class="curtain-door curtain-door--left" aria-hidden="true">
+      <div class="jaali-pattern"></div>
+    </div>
+    <div class="curtain-door curtain-door--right" aria-hidden="true">
+      <div class="jaali-pattern"></div>
+    </div>
+
+    <div class="curtain-center">
+      <div class="curtain-seal-card">
+        <div class="sacred-crest" aria-hidden="true">ॐ</div>
+        <p class="curtain-blessing">|| जय माँ काली || • || श्री गणेशाय नमः ||</p>
+        <p class="curtain-host">बर्मन परिवार का स्नेहिल आमंत्रण</p>
+        <div class="curtain-divider"><span>✦</span></div>
+        <h1 class="curtain-couple">
+          <span>अर्चना</span>
+          <span class="curtain-sang">संग</span>
+          <span>मोहित</span>
+        </h1>
+        <p class="curtain-date">शुक्रवार, 11 दिसम्बर 2026 • पाटन, जबलपुर (म.प्र.)</p>
+
+        <button id="open-invite-btn" class="btn-royal-seal" type="button">
+          <span class="btn-royal-seal__label">निमंत्रण खोलें</span>
+          <span class="btn-royal-seal__sub">Open Royal Invite ✦</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Audio -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="assets/wedding-music.wav" type="audio/wav" />
+  </audio>
+
+  <!-- Sticky Navigation -->
+  <header class="top-nav" id="top-nav">
+    <div class="top-nav__inner">
+      <a href="#hero" class="brand-mark">
+        <span class="brand-mark__hindi">अर्चना &amp; मोहित</span>
+        <span class="brand-mark__date">11 Dec 2026</span>
+      </a>
+      <nav class="nav-links" aria-label="Section Navigation">
+        <a href="#couple">परिचय</a>
+        <a href="#events">संस्कार बेलाएँ</a>
+        <a href="#venue">कार्यस्थल</a>
+        <a href="#family">परिवार</a>
+        <a href="#contact">संपर्क</a>
+      </nav>
+      <button id="music-toggle" class="music-pill" type="button" aria-label="Toggle wedding music" aria-pressed="false">
+        <span class="music-bars" aria-hidden="true">
+          <i></i><i></i><i></i>
+        </span>
+        <span class="music-pill__text">संगीत</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="shloka-badge">
+            <span class="shloka-title">|| जय माँ काली || • || श्री गणेशाय नमः ||</span>
+            <p class="shloka-lines">
+              विघ्नहरण मंगलकरण गौरी पुत्र गणेश ।<br />
+              प्रथम निमंत्रण आपको ब्रह्मा, विष्णु, महेश ।।
+            </p>
+          </div>
+
+          <p class="eyebrow-en">ROYAL WEDDING INVITATION • बर्मन परिवार का स्नेहिल आमंत्रण</p>
+
+          <h2 class="hero-names">
+            <span class="name-main">अर्चना</span>
+            <span class="name-connector">संग</span>
+            <span class="name-main">मोहित</span>
+          </h2>
+
+          <p class="hero-quote">
+            परम स्नेही स्वजन, ईश्वर की असीम कृपा से हमारी सुपुत्री के दाम्पत्य बंधन की मधुर बेला पर
+            आयोजित संस्कार में आपकी गरिमामयी उपस्थिति एवं आशीर्वाद के हम आकांक्षी हैं।
+          </p>
+
+          <div class="hero-meta-bar">
+            <div class="meta-pill">
+              <span class="meta-pill__label">शुभ परिणय</span>
+              <strong>शुक्रवार, 11 दिसम्बर 2026</strong>
+            </div>
+            <div class="meta-pill">
+              <span class="meta-pill__label">शुभ बेला</span>
+              <strong>सायं 7:00 बजे से</strong>
+            </div>
+            <div class="meta-pill">
+              <span class="meta-pill__label">कार्यस्थल</span>
+              <strong>नेमा गार्डन, पाटन (जबलपुर)</strong>
+            </div>
+          </div>
+
+          <div class="countdown-card" aria-label="Wedding Countdown">
+            <p class="countdown-card__title">शुभ विवाह में शेष समय • Counting Down</p>
+            <div class="countdown-grid" id="countdown">
+              <div class="cd-box">
+                <span id="cd-days">00</span>
+                <small>दिन / Days</small>
+              </div>
+              <div class="cd-box">
+                <span id="cd-hours">00</span>
+                <small>घंटे / Hrs</small>
+              </div>
+              <div class="cd-box">
+                <span id="cd-mins">00</span>
+                <small>मिनट / Mins</small>
+              </div>
+              <div class="cd-box">
+                <span id="cd-secs">00</span>
+                <small>सेकंड / Secs</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#events" class="btn btn--primary">संस्कार बेलाएँ देखें • Schedule</a>
+            <button id="save-calendar-btn" class="btn btn--outline" type="button">📅 Save Date (11 Dec)</button>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="arch-frame">
+            <img src="assets/couple-welcome.jpg" alt="अर्चना और मोहित शुभ विवाह चित्र" loading="eager" />
+            <div class="arch-frame__caption">
+              <span>अर्चना &amp; मोहित</span>
+              <small>11 • 12 • 2026</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUPLE & HERITAGE SECTION -->
+    <section id="couple" class="section section--tinted">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">दाम्पत्य बंधन • The Couple</span>
+          <h2 class="section-title">वर एवं वधू परिचय</h2>
+          <p class="section-sub">
+            आपके आगमन की प्रतीक्षा में — पाटन (जबलपुर) एवं नौगाँव (छतरपुर) का पावन मिलन
+          </p>
+        </div>
+
+        <div class="couple-cards">
+          <!-- Bride Card -->
+          <article class="heritage-card reveal">
+            <div class="heritage-portrait">
+              <img src="assets/event-mehndi.jpg" alt="आयुष्मति अर्चना (ज्योति)" loading="lazy" />
+            </div>
+            <div class="heritage-card__crest">वधू • The Bride</div>
+            <h3 class="heritage-card__name">आयुष्मति अर्चना (ज्योति)</h3>
+            <div class="heritage-card__divider"><span>❖</span></div>
+            <dl class="lineage-list">
+              <div>
+                <dt>सुपौत्री</dt>
+                <dd>स्व. श्री दमड़ीलाल बर्मन</dd>
+              </div>
+              <div>
+                <dt>सुपुत्री</dt>
+                <dd>श्री जगदीश प्रसाद बर्मन – श्रीमती अनीता बर्मन</dd>
+              </div>
+              <div>
+                <dt>निवास</dt>
+                <dd>गुरु मोहल्ला, पाटन, जिला-जबलपुर (म.प्र.)</dd>
+              </div>
+            </dl>
+          </article>
+
+          <!-- Center Doli & Peacocks Emblem -->
+          <div class="couple-emblem reveal">
+            <div class="peacock-medallion">
+              <img src="assets/doli-peacocks.jpg" alt="शुभ विवाह डोली एवं मोर" loading="lazy" />
+            </div>
+            <span class="sang-badge">संग</span>
+          </div>
+
+          <!-- Groom Card -->
+          <article class="heritage-card reveal">
+            <div class="heritage-portrait">
+              <img src="assets/event-mandap.jpg" alt="आयुष्मान मोहित" loading="lazy" />
+            </div>
+            <div class="heritage-card__crest">वर • The Groom</div>
+            <h3 class="heritage-card__name">आयुष्मान मोहित</h3>
+            <div class="heritage-card__divider"><span>❖</span></div>
+            <dl class="lineage-list">
+              <div>
+                <dt>सुपौत्र</dt>
+                <dd>स्व. श्री मुकुन्दीलाल रैकवार</dd>
+              </div>
+              <div>
+                <dt>सुपुत्र</dt>
+                <dd>स्व. श्री प्यारेलाल रैकवार – श्रीमती मंजू रैकवार</dd>
+              </div>
+              <div>
+                <dt>निवास</dt>
+                <dd>नौगाँव, छतरपुर (म.प्र.)</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS SECTION (Full-Bleed Dulha-Dulhan Cards) -->
+    <section id="events" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">संस्कार बेलाएँ • Wedding Itinerary</span>
+          <h2 class="section-title">शुभ विवाह कार्यक्रम</h2>
+          <p class="section-sub">पारंपरिक रीति-रिवाजों, हल्दी, संगीत और मंगल परिणय के पावन उत्सव</p>
+        </div>
+
+        <div class="events-grid-three">
+          <article class="event-card-v2 reveal">
+            <div class="event-card-v2__media">
+              <img src="assets/event-mandap.jpg" alt="मण्डपाच्छादन - अर्चना एवं मोहित" loading="lazy" />
+              <span class="event-day-chip">बुधवार</span>
+            </div>
+            <div class="event-card-v2__body">
+              <span class="event-en">Mandapachaadan</span>
+              <h3>मण्डपाच्छादन</h3>
+              <p class="event-date">09 दिसम्बर 2026</p>
+              <p class="event-note">पावन मण्डप स्थापना, कलश पूजन एवं वैदिक मंगलाचरण</p>
+              <div class="event-tags">
+                <span>🎋 मण्डप</span>
+                <span>🪔 कलश पूजन</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card-v2 reveal">
+            <div class="event-card-v2__media">
+              <img src="assets/event-haldi.jpg" alt="मातृकापूजन एवं हल्दी - अर्चना एवं मोहित" loading="lazy" />
+              <span class="event-day-chip">गुरूवार</span>
+            </div>
+            <div class="event-card-v2__body">
+              <span class="event-en">Matrika Poojan &amp; Haldi</span>
+              <h3>मातृकापूजन एवं हल्दी</h3>
+              <p class="event-date">10 दिसम्बर 2026</p>
+              <p class="event-note">मातृका पूजन एवं शुभ हल्दी की मंगल फुहार</p>
+              <div class="event-tags">
+                <span>🌼 पावन हल्दी</span>
+                <span>🙏 मातृकापूजन</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card-v2 reveal">
+            <div class="event-card-v2__media">
+              <img src="assets/event-mehndi.jpg" alt="मेहंदी एवं संगीत - अर्चना एवं मोहित" loading="lazy" />
+              <span class="event-day-chip">गुरूवार</span>
+            </div>
+            <div class="event-card-v2__body">
+              <span class="event-en">Mehndi &amp; Sangeet Sandhya</span>
+              <h3>मेहंदी एवं संगीत</h3>
+              <p class="event-date">10 दिसम्बर 2026</p>
+              <p class="event-note">शुभ मेहंदी रस्म, ढोलक-गीत एवं संगीतमय संध्या</p>
+              <div class="event-tags">
+                <span>🌿 मेहंदी रस्म</span>
+                <span>🎶 संगीत संध्या</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Grand Featured Shubh Vivah Card -->
+        <article class="featured-vivah reveal">
+          <div class="featured-vivah__media">
+            <img src="assets/event-varmala.jpg" alt="शुभ विवाह वरमाला - अर्चना एवं मोहित" loading="lazy" />
+            <span class="event-day-chip">मुख्य समारोह • शुक्रवार</span>
+          </div>
+          <div class="featured-vivah__body">
+            <span class="event-en">Baraat Swagat • Aashirwad Samaroh • Preetibhoj</span>
+            <h3>|| शुभ विवाह || बारात स्वागत, आशीर्वाद समारोह एवं प्रीतिभोज</h3>
+            <p class="event-date">शुक्रवार, 11 दिसम्बर 2026 • सायं 7:00 बजे से आपके आगमन तक</p>
+            <p class="event-note">
+              कार्यस्थल: <strong>नेमा गार्डन, नित्य गोपाल मंदिर के आगे, शहपुरा रोड, पाटन, जिला-जबलपुर (म.प्र.)</strong>
+            </p>
+            <div class="featured-highlights">
+              <div class="highlight-chip"><span>🐎</span> बारात स्वागत</div>
+              <div class="highlight-chip"><span>💐</span> वरमाला</div>
+              <div class="highlight-chip"><span>🔥</span> पाणिग्रहण संस्कार</div>
+              <div class="highlight-chip"><span>🙏</span> आशीर्वाद समारोह</div>
+              <div class="highlight-chip"><span>🍽️</span> प्रीतिभोज</div>
+            </div>
+            <div class="featured-invite-note">
+              “आपकी गरिमामयी उपस्थिति एवं आशीर्वाद के हम आकांक्षी हैं — कृपया सपरिवार पधारें।”
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- VENUE SECTION -->
+    <section id="venue" class="section section--royal">
+      <div class="container venue-grid">
+        <div class="venue-art reveal">
+          <div class="venue-arch-card">
+            <img src="assets/event-varmala.jpg" alt="नेमा गार्डन - शुभ विवाह स्थल" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="venue-info reveal">
+          <span class="section-kicker section-kicker--light">कार्यस्थल एवं पता • Venue &amp; Directions</span>
+          <h2 class="venue-title">नेमा गार्डन</h2>
+          <p class="venue-address">नित्य गोपाल मंदिर के आगे, शहपुरा रोड, पाटन, जिला-जबलपुर (म.प्र.)</p>
+
+          <div class="venue-timing-box">
+            <div>
+              <small>शुभ दिनांक</small>
+              <strong>शुक्रवार, 11 दिसम्बर 2026</strong>
+            </div>
+            <div>
+              <small>बारात स्वागत, आशीर्वाद समारोह एवं प्रीतिभोज</small>
+              <strong>सायं 7:00 बजे से आपके आगमन तक</strong>
+            </div>
+          </div>
+
+          <div class="venue-actions">
+            <a
+              class="btn btn--gold"
+              href="https://www.google.com/maps/search/?api=1&query=Nema+Garden+Shahpura+Road+Patan+Jabalpur+Madhya+Pradesh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              📍 Google Maps पर देखें
+            </a>
+            <button id="copy-venue-btn" class="btn btn--glass" type="button">
+              📋 पता कॉपी करें
+            </button>
+          </div>
+
+          <div class="residence-card">
+            <span class="residence-card__label">प्रेषक निवास स्थान</span>
+            <p>
+              <strong>श्री जगदीश प्रसाद बर्मन, दीपक बर्मन, दीपेन्द्र बर्मन</strong><br />
+              गुरु मोहल्ला, पाटन, जिला-जबलपुर (म.प्र.)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BARMAN FAMILY & NATKHAT TOLI -->
+    <section id="family" class="section section--tinted">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">बर्मन परिवार • With Love From Family</span>
+          <h2 class="section-title">स्नेहिल आमंत्रण एवं परिवार</h2>
+        </div>
+
+        <blockquote class="natkhat-banner reveal">
+          <span class="natkhat-banner__tag">✦ नटखट टोली ✦</span>
+          <p class="natkhat-banner__verse">
+            “हमारी प्यारी बुआ की शादी में आपका हार्दिक स्वागत एवं अभिनन्दन!”
+          </p>
+          <footer class="natkhat-banner__kids">— श्रेया, आरुष, समृद्धि, शिवन्या, बुलबुल, परी, लवी</footer>
+        </blockquote>
+
+        <div class="family-tabs reveal" role="tablist" aria-label="Family Lists">
+          <button class="family-tab is-active" type="button" role="tab" aria-selected="true" data-tab="vineet">विनीत (बर्मन परिवार)</button>
+          <button class="family-tab" type="button" role="tab" aria-selected="false" data-tab="swagat">स्वागताकांक्षी</button>
+          <button class="family-tab" type="button" role="tab" aria-selected="false" data-tab="darshan">दर्शनाभिलाषी</button>
+        </div>
+
+        <div id="panel-vineet" class="family-panel is-active reveal" role="tabpanel">
+          <ul class="family-list-grid">
+            <li><strong>पापा-मम्मी :</strong> श्री जगदीश प्रसाद – श्रीमती अनीता बर्मन</li>
+            <li><strong>प्रेषक (भाई) :</strong> दीपक बर्मन, दीपेन्द्र बर्मन</li>
+            <li><strong>बड़े पापा-मम्मी :</strong> श्री रमेश प्रसाद – श्रीमती पार्वती बाई</li>
+            <li><strong>बड़े पापा-मम्मी :</strong> स्व. श्री मुनीलाल – श्रीमती फगन बाई</li>
+            <li><strong>बड़े पापा-मम्मी :</strong> स्व. श्री रघुवीर प्रसाद – श्रीमती रामवती बाई</li>
+            <li><strong>चाचा-चाची :</strong> श्री पूरनलाल – श्रीमती बटरी बाई</li>
+          </ul>
+        </div>
+
+        <div id="panel-swagat" class="family-panel" role="tabpanel">
+          <ul class="family-list-grid">
+            <li><strong>फूफाजी :</strong> श्री राजाराम बर्मन</li>
+            <li><strong>मामा-मामी :</strong> श्री रघुवीर – श्रीमती कांता</li>
+            <li><strong>मामा-मामी :</strong> श्री प्रहलाद – श्रीमती सोना</li>
+            <li><strong>मामी :</strong> श्रीमती माया बर्मन</li>
+            <li><strong>मामा :</strong> सुरेश, विजय, बबलू, संजू, पंचू</li>
+          </ul>
+        </div>
+
+        <div id="panel-darshan" class="family-panel" role="tabpanel">
+          <ul class="family-list-grid">
+            <li><strong>नानी :</strong> श्रीमती ग्यारसो बर्मन</li>
+            <li><strong>जीजाजी-दीदी :</strong> श्री आशीष – श्रीमती अम्बिका</li>
+            <li><strong>मौसा-मौसी :</strong> श्री जीवनलाल – श्रीमती सविता</li>
+            <li><strong>भैया-भाभी :</strong> श्री मुन्नालाल – श्रीमती आशा</li>
+            <li><strong>भैया-भाभी :</strong> श्री दीपक – श्रीमती नेहा</li>
+            <li><strong>भाई :</strong> श्री दुर्गेश, प्रकाश, दीपेन्द्र, सुनील, ब्रजेश, क्रांति, सोनू, शुभम, साहिल, रामजी, गौरव, बिट्टू</li>
+            <li><strong>बहन :</strong> संगीता, प्रतीक्षा, मुस्कान, अनुष्का, काजल, मिनू</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING & CONTACT SECTION -->
+    <section id="contact" class="closing-section">
+      <div class="container closing-grid">
+        <div class="closing-art reveal">
+          <img src="assets/couple-closing.jpg" alt="आपके आगमन की प्रतीक्षा में - अर्चना एवं मोहित" loading="lazy" />
+        </div>
+
+        <div class="closing-copy reveal">
+          <p class="closing-en">See You Soon</p>
+          <h2>आपके आगमन की प्रतीक्षा में...</h2>
+          <p class="closing-sub">
+            सपरिवार पधारकर वर-वधू अर्चना एवं मोहित को अपना स्नेह और आशीर्वाद प्रदान करें। किसी भी जानकारी के लिए संपर्क करें:
+          </p>
+
+          <div class="contact-pills">
+            <a href="tel:+918319887047" class="contact-pill">📞 8319887047</a>
+            <a href="tel:+918839596045" class="contact-pill">📞 8839596045</a>
+            <a
+              href="https://wa.me/918319887047?text=%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%9A%E0%A4%A8%E0%A4%BE%20%E0%A4%8F%E0%A4%B5%E0%A4%82%20%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A4%BF%E0%A4%A4%20%E0%A4%95%E0%A5%87%20%E0%A4%B6%E0%A5%81%E0%A4%AD%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B9%20%E0%A4%95%E0%A5%80%20%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%95%20%E0%A4%B6%E0%A5%81%E0%A4%AD%E0%A4%95%E0%A4%BE%E0%A4%AE%E0%A4%A8%E0%A4%BE%E0%A4%8F%E0%A4%81!"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-pill contact-pill--wa"
+            >
+              💬 WhatsApp शुभकामना
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>|| श्री गणेशाय नमः || • अर्चना (ज्योति) संग मोहित • 11 दिसम्बर 2026 • बर्मन परिवार का स्नेहिल आमंत्रण</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
