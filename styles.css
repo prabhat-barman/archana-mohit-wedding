@@ -1457,9 +1457,29 @@ img {
     gap: 18px;
   }
 
+  .event-card-v2__body {
+    text-align: center;
+  }
+
+  .event-card-v2__body .event-tags {
+    justify-content: center;
+  }
+
+  .event-card-v2__body .event-day-label,
+  .event-card-v2__body .event-date,
+  .event-card-v2__body .event-desc,
+  .event-card-v2__body .section-kicker {
+    text-align: center;
+  }
+
   /* Featured vivah */
   .featured-vivah {
     gap: 20px;
+    text-align: center;
+  }
+
+  .featured-vivah .event-tags {
+    justify-content: center;
   }
 
   .featured-vivah__media img {
